@@ -1,0 +1,2 @@
+https://www.cdnpkg.com/Glide.js
+
