@@ -1,3 +1,31 @@
+@charset "utf-8";
+
+/* 
+
+Copyright (c) 2022 Marketify 
+Author: ThemeFox 
+This file is made for CURRENT TEMPLATE
+
+01)	E-bike BASE
+02) E-bike Header
+03) E-bike HERO
+04) E-Bike ABOUT
+05) E-bike OUR-PRODUCTS
+06) E-bike SPECIAL-FEATURES
+07) E-bike PRODUCT-PRICING
+08) E-bike TESTIMONIALS
+09) E-bike LATEST-NEWS
+10) E-bike NEWSLETTER
+11) E-bike BRANDS
+12) E-bike FOOTER
+13) E-bike MEDIA QUERIES (FOR SMALL DEVIVES)
+
+*/
+
+/*---------------------------------------------------*/
+/*	01) E-bike BASE */
+/*---------------------------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +41,7 @@ html,
 body {
     background: #EFF3F5;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -22,6 +51,33 @@ body {
 section {
     scroll-margin-top: 100px;
 }
+
+.theme-btn {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFF !important;
+    position: relative;
+    background: url('../images/bg/button-bg.png') no-repeat;
+    background-size: cover;
+    border-radius: 0px !important;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all;
+    margin: 0px 0px 0px 10px;
+    min-width: 180px;
+}
+
+.theme-btn:hover {
+    background: url('../images/bg/button-bg-black.png') no-repeat;
+    color: #FFF !important;
+    background-size: cover;
+}
+
+/*---------------------------------------------------*/
+/* 02) E-bike Header */
+/*---------------------------------------------------*/
 
 header {
     position: absolute;
@@ -41,7 +97,6 @@ header {
     box-shadow: 0px 4px 14px rgb(0 0 0 / 15%);
     z-index: 999;
 }
-
 
 header .navbar .nav-item {
     margin: 5px 10px;
@@ -79,29 +134,9 @@ header .navbar .nav-item .nav-link:active::after {
     height: 15px;
 }
 
-.theme-btn {
-    font-weight: 700;
-    font-size: 18px;
-    color: #FFF !important;
-    position: relative;
-    background: url('../images/bg/button-bg.png') no-repeat;
-    background-size: cover;
-    border-radius: 0px !important;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s all;
-    margin: 0px 0px 0px 10px;
-    min-width: 180px;
-}
-
-.theme-btn:hover {
-    background: url('../images/bg/button-bg-black.png') no-repeat;
-    color: #FFF !important;
-    background-size: cover;
-}
-
+/*---------------------------------------------------*/
+/* 02) E-bike HERO */
+/*---------------------------------------------------*/
 
 .hero-wrapper {
     position: relative;
@@ -167,7 +202,10 @@ header .navbar .nav-item .nav-link:active::after {
     margin: 20px 0px;
 }
 
-/* About Starts */
+/*---------------------------------------------------*/
+/* 02) E-bike ABOUT */
+/*---------------------------------------------------*/
+
 .about-wrapper {
     padding: 150px 0px 100px 0px;
     position: relative;
@@ -251,7 +289,9 @@ header .navbar .nav-item .nav-link:active::after {
 }
 
 
-/* our-product-wrapper starts  */
+/*---------------------------------------------------*/
+/* 05) E-bike OUR-PRODUCTS */
+/*---------------------------------------------------*/
 
 .our-product-wrapper {
     position: relative;
@@ -291,8 +331,6 @@ header .navbar .nav-item .nav-link:active::after {
 }
 
 .product .img-wrapper {
-    /* width: 350px; */
-    /* width: 568px; */
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -351,23 +389,19 @@ header .navbar .nav-item .nav-link:active::after {
 
 .product-slider-wrapper .glide__slide.glide__slide--active {
     opacity: 1;
-
 }
 
 .product-slider-wrapper .glide__slide.glide__slide--active .product .img-wrapper {
-    /* width: 568px; */
     transform: scale(1);
 }
 
 
 .product-slider-wrapper .glide__slide .product .info-box {
-    /* opacity: 0; */
     display: none;
     transition: 1ms all;
 }
 
 .product-slider-wrapper .glide__slide.glide__slide--active .product .info-box {
-    /* opacity: 1; */
     display: flex;
 }
 
@@ -400,8 +434,9 @@ header .navbar .nav-item .nav-link:active::after {
     height: 20px;
 }
 
-
-/* features-wrapper starts */
+/*---------------------------------------------------*/
+/*	06) E-bike SPECIAL-FEATURES */
+/*---------------------------------------------------*/
 
 .features-wrapper {
     position: relative;
@@ -509,7 +544,9 @@ header .navbar .nav-item .nav-link:active::after {
 }
 
 
-/* product-pricing-wrapper starts */
+/*---------------------------------------------------*/
+/*	07) E-bike PRODUCT-PRICING */
+/*---------------------------------------------------*/
 
 .product-pricing-wrapper {
     position: relative;
@@ -570,7 +607,6 @@ header .navbar .nav-item .nav-link:active::after {
     color: #000000;
 }
 
-
 .price-list ul.heading-price li {
     font-weight: 600;
 }
@@ -587,7 +623,10 @@ header .navbar .nav-item .nav-link:active::after {
     top: -70px;
 }
 
-/* tetsimonial-wrapper starts */
+/*---------------------------------------------------*/
+/*	08) E-bike TESTIMONIALS */
+/*---------------------------------------------------*/
+
 .tetsimonial-wrapper {
     position: relative;
     padding: 130px 0px 0px 0px;
@@ -684,8 +723,9 @@ header .navbar .nav-item .nav-link:active::after {
     color: #8A8A8A;
 }
 
-
-/* blogs-wrapper starts */
+/*---------------------------------------------------*/
+/*	09) E-bike LATEST-NEWS */
+/*---------------------------------------------------*/
 
 .blogs-wrapper {
     position: relative;
@@ -786,7 +826,9 @@ header .navbar .nav-item .nav-link:active::after {
     cursor: pointer;
 }
 
-/* newsletter-wrapper starts */
+/*---------------------------------------------------*/
+/*	10) E-bike NEWSLETTER */
+/*---------------------------------------------------*/
 
 .newsletter-wrapper {
     position: relative;
@@ -866,8 +908,9 @@ header .navbar .nav-item .nav-link:active::after {
     height: auto;
 }
 
-
-/* brand section starts */
+/*---------------------------------------------------*/
+/*	11) E-bike BRANDS */
+/*---------------------------------------------------*/
 
 #brand-logos {
     background-color: #FFF;
@@ -910,8 +953,9 @@ header .navbar .nav-item .nav-link:active::after {
     display: block;
 }
 
-
-/* footer starts */
+/*---------------------------------------------------*/
+/*	12) E-bike FOOTER */
+/*---------------------------------------------------*/
 
 footer {
     background: #2F2F2F;
@@ -1090,6 +1134,10 @@ footer {
     text-decoration: none;
     text-align: center;
 }
+
+/*---------------------------------------------------*/
+/*	13) E-bike MEDIA QUERIES (FOR SMALL DEVIVES) */
+/*---------------------------------------------------*/
 
 @media only screen and (max-width:1580px) {
     .product .img-wrapper {
@@ -1689,7 +1737,3 @@ footer {
         margin: 20px 0px 0px 0px;
     }
 }
-
-
-
-

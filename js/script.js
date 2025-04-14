@@ -1,3 +1,6 @@
+// AOS animation init
+AOS.init();
+
 //  ================= header fixed to top =================
 
 window.onscroll = function () { myHeaderTop() };
